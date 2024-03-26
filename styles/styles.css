@@ -1,0 +1,199 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1495,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --font--2: clamp(0.7813rem, 0.7653rem + 0.08vi, 0.84rem);
+  --font--1: clamp(0.9375rem, 0.9069rem + 0.1532vi, 1.05rem);
+  --font-0: clamp(1.125rem, 1.0739rem + 0.2553vi, 1.3125rem);
+  --font-1: clamp(1.35rem, 1.2709rem + 0.3957vi, 1.6406rem);
+  --font-2: clamp(1.62rem, 1.5027rem + 0.5866vi, 2.0508rem);
+  --font-3: clamp(1.944rem, 1.7753rem + 0.8435vi, 2.5635rem);
+  --font-4: clamp(2.3328rem, 2.0954rem + 1.1868vi, 3.2043rem);
+
+  /* colors */
+  --linear-gradient: linear-gradient(330deg, var(--cl--1), var(--cl--2));
+  --radial-gradient: radial-gradient(circle, var(--cl--2), var(--cl--1-0));
+  --cl--1: hsl(240, 50%, 54%);
+  --cl--1-1: hsl(240, 50%, 70%);
+  --cl--1-0: hsl(240, 43%, 29%);
+  --cl--2: hsl(180, 50%, 54%);
+  --cl--3: hsl(28, 100%, 50%);
+  --cl--3-1: hsl(28, 88%, 80%);
+  --cl--4: rgb(239, 255, 252);
+
+  /* spacing */
+  --paragraph: clamp(25ch, 70vw, 70ch);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", "Open sans", sans-serif;
+  font-size: var(--font-0);
+}
+
+body {
+  height: 100vh;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+header {
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  justify-content: space-around;
+  height: fit-content;
+}
+
+/* nav */
+nav > a {
+  font-size: var(--font--1);
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0px 3rem;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.nav a {
+  color: var(--cl--4);
+}
+
+.nav a:hover {
+  color: var(--cl--3);
+}
+
+a > div:hover {
+  color: white;
+  background-color: var(--cl--3);
+}
+
+.logo {
+  padding: 0px 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 3rem;
+}
+
+.logo .logo-text {
+  font-size: var(--font-2);
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+h2.section-header {
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  padding: 1rem 0px;
+}
+
+h1 {
+  font-size: var(--font-3);
+}
+
+h2 {
+  font-size: var(--font-2);
+}
+
+h3 {
+  font-size: var(--font-1);
+  padding-left: 1rem;
+}
+
+.pill {
+  border-radius: 1.5em;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+abbr {
+  text-decoration: underline;
+  text-decoration-color: var(--cl--1-0);
+}
+
+a:link span,
+a:active span {
+  color: var(--cl--1);
+}
+
+a span:hover {
+  color: var(--cl--3);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* width: var(--font--2);
+  background-color: var(--cl--2);
+  border-radius: var(--font--2); */
+}
+/* 
+::-webkit-scrollbar-thumb {
+  background-color: var(--cl--1);
+  border-radius: var(--font--2);
+} */
+
+/* @media screen and (max-width: 1000px) {
+  .testimonial:not(.active) {
+    display: none;
+  }
+} */
+
+/* projects section */
+.projects {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.projects-title-card {
+  padding: 0.1em 14em 0.9em 1.5em;
+  background: hsl(180, 50%, 54%);
+  width: fit-content;
+  position: absolute;
+  left: 10%;
+  z-index: -1;
+  top: 35px;
+}
+
+.projects-container {
+  width: 70%;
+  background-color: white;
+  height: 100vh;
+  border: 2px solid black;
+}

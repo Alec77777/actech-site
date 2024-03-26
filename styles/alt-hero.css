@@ -1,0 +1,11 @@
+.alt-hero {
+  height: clamp(20vh, 20vw, 50vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-hero h1 {
+  font-size: var(--font-4);
+}

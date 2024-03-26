@@ -1,0 +1,83 @@
+.alt-hero {
+  background: radial-gradient(circle, var(--cl--2), var(--cl--1-1));
+}
+
+.phases {
+  height: fit-content;
+  background: fixed url("../images/christian-wiediger-WkfDrhxDMC8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  background-blend-mode: color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phases > .section-header {
+  align-self: flex-start;
+}
+
+.phases ol {
+  padding: 0;
+  margin: 0;
+}
+
+.phase {
+  background-color: hsla(0, 0%, 100%, 0.7);
+  margin-bottom: 2rem;
+  list-style-type: none;
+  padding: 2rem;
+  width: var(--paragraph);
+  /* display: grid; */
+  /* text-align: justify; */
+  /* grid-template-rows: 12rem; */
+}
+
+.phase:nth-of-type(1) {
+  background-color: hsla(57, 100%, 83%, 0.7);
+}
+
+.phase:nth-of-type(2) {
+  background-color: hsla(237, 100%, 83%, 0.7);
+}
+
+.phase:nth-of-type(3) {
+  background-color: hsla(112, 100%, 83%, 0.7);
+}
+
+.phase:nth-of-type(1n) .phase-image {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.phase:nth-of-type(2n) .phase-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+.phase-image {
+  width: max(200px, 40%);
+  border: 4px solid white;
+}
+
+.phase h3 {
+  padding-top: 0;
+}
+
+.phase p {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .phase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phase:nth-of-type(1n) .phase-image {
+    float: none;
+    margin: 0 auto 1rem;
+  }
+}

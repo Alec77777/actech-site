@@ -1,0 +1,35 @@
+/* quickNav */
+.quickNav {
+  position: fixed;
+  top: 150px;
+  right: 0px;
+  background-color: white;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.quickNav.hide {
+  transform: translateX(100%);
+}
+
+.quickNav div {
+  padding: 0.5em 0.7em;
+}
+
+.quickNav div:hover {
+  background-color: var(--cl--2);
+}
+
+.quickNav svg {
+  width: 20px;
+  aspect-ratio: 1/1;
+  fill: black;
+}
+
+.quickNav svg path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

@@ -1,0 +1,95 @@
+.alt-hero {
+  background: var(--radial-gradient);
+}
+
+/* profiles */
+.profiles {
+  background-image: url("../images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.profiles h2 {
+  padding: 2rem;
+  color: var(--cl--);
+}
+
+.profiles h3 {
+  padding: 0 1rem 1rem;
+}
+
+.profiles-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+.profile-item {
+  width: clamp(25ch, 70vw, 70ch);
+  display: grid;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  margin: 2rem 2rem 0;
+  padding: 2rem;
+  z-index: 1;
+  color: black;
+}
+
+.profile-item .profile-pic {
+  align-self: center;
+  justify-self: center;
+  border-radius: 100%;
+  width: clamp(150px, 70%, 200px);
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profile-item .profile-pic img {
+  height: 100%;
+  aspect-ratio: inherit;
+}
+
+.profile-item .profile-text {
+  padding: 1rem;
+}
+
+.profile-item .profile-text p {
+  line-height: var(--font-1);
+}
+
+@media screen and (max-width: 750px) {
+  .profile-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* mission */
+
+.mission {
+  background: var(--linear-gradient);
+  position: relative;
+}
+
+.mission .container {
+  background-color: hsla(0, 0%, 100%, 0.7);
+  width: var(--paragraph);
+  margin: auto;
+  padding: 0 2rem 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+.mission-item > h3 {
+  padding-top: 2rem;
+}
