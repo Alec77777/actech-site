@@ -105,6 +105,7 @@ a > div:hover {
 section {
   height: 100vh;
   width: 100%;
+  padding: 1rem;
 }
 
 h2.section-header {
@@ -137,6 +138,11 @@ h3 {
 button {
   cursor: pointer;
   padding: 0.5em 1em;
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: initial;
 }
 
 abbr {
